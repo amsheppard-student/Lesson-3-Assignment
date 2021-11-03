@@ -1,0 +1,145 @@
+<!-- Aven Sheppard Lesson 10 HTML Doc wtih help from Morten Rand-Hendriksen. -->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Website Demo</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Source+Sans+Pro:400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="mystyles.css" type="text/css" media="all">
+
+
+</head>
+
+<body class="site">
+
+    <header>
+        <section class="navbar">
+          <ul><li>Home</li>
+          <li>About Me</li>
+          
+          <li> Work Experience <ul>
+            <li>Relevant Work Experience</li>
+            <li>Other Work Experience</li>
+            </ul>
+          </li>
+
+            <li> Contact Me <ul>
+              <li>Phone</li>
+              <li>Social Media</li>
+              <li>Contact Form</li>
+          </ul>
+            </li>
+            
+      </ul></section>
+
+    <header class="masthead">
+        <h1 class="site-title">Aven Sheppard Portfolio</h1>
+    </header><!-- .masthead -->
+
+    <main id="content" class="main-area">
+        <ul class="cards">
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                            <source media="(max-width: 1500px)" srcset="images/rock-1000.jpg">
+                            <source media="(max-width: 2000px)" srcset="images/rock-1500.jpg">
+                            <source srcset="images/rock-2000.jpg">
+                          <img src="images/rock-1500.jpg"
+                            alt="A picture of red yellow and grey rocks I took at a wine vineyard.">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Photography</h3>
+                            <p>Examples of my photography. I specialize in close-ups and landscapes.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <source media="(max-width: 1500px)" srcset="images/advert-1000.jpg">
+                            <source media="(max-width: 2000px)" srcset="images/advert-1500.jpg">
+                            <source srcset="images/advert-2000.jpg">
+                          <img src="images/advert-1500.jpg"
+                            alt="An advertisement I created for Marlboro cigarettes. It has a cowboy looking off into the distance and a cigarette box in the right corner.">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Graphic Design</h3>
+                            <p>Currently in college for Graphic Design. Displayed is an advertisment I created.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <source media="(max-width: 1500px)" srcset="images/cartoon-1000.jpg">
+                            <source media="(max-width: 2000px)" srcset="images/cartoon-1500.jpg">
+                            <source srcset="images/cartoon-2000.jpg">
+                          <img src="images/cartoon-1500.jpg"
+                            alt="A picture of alien that is floating around in space with a red jetpack on.">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Art</h3>
+                            <p> Some of the art I have created. I like to do cartoons and abstract things. Realism is a bit more difficult for me.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                            <source media="(max-width: 1500px)" srcset="images/icon-1000.jpg">
+                            <source media="(max-width: 2000px)" srcset="images/icon-1500.jpg">
+                            <source srcset="images/icon-2000.jpg">
+                          <img src="images/icon-1500.jpg"
+                            alt="A picture of alienlike creature that looks like an eye and has arms extruding from it.">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Icons/Art</h3>
+                            <p>Know how to make basic icons for companies and cool logo like designs.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item double">
+                <a href="#">
+                    <figure class="card">
+                        <source media="(max-width: 1500px)" srcset="images/pro-1000.jpg">
+                            <source media="(max-width: 2000px)" srcset="images/pro-1500.jpg">
+                            <source srcset="images/pro-2000.jpg">
+                          <img src="images/pro-1500.jpg"
+                            alt="A website I designed for class. This is a visual studio code picture of the code">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Programming</h3>
+                            <p>Taking this class and a Programming class last semester I've learned how to design and program basic websites.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item double">
+                <a href="#">
+                    <figure class="card">
+                        <source media="(max-width: 1500px)" srcset="images/web-1000.jpg">
+                            <source media="(max-width: 2000px)" srcset="images/web-1500.jpg">
+                            <source srcset="images/web-2000.jpg">
+                          <img src="images/web-1500.jpg"
+                            alt="A website I designed for class. Color scheme is purple and white and it displays my portfolio info.">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Web Design</h3>
+                            <p>Taking this class and a Programming class last semester I've learned how to design and program basic websites.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="colophon grid">
+        <aside>Layout Inspired by: <a href="https://twitter.com/mor10" target="_blank" rel="nofollow">Morten Rand-Hendriksen</a>.</aside>
+        <aside>Content, Design, and All photos: <a href="https://twitter.com/aven_sheppard" target="_blank" rel="nofollow">Aven Sheppard</a>.</aside>
+    </footer>
+
+</body>
+
+</html>

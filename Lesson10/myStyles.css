@@ -1,0 +1,206 @@
+/* Aven Sheppard Lesson 10 CSS Doc with help from Morten Rand-Hendriksen. */
+/* Dropdown
+-----------------------*/
+.navbar ul {                                  
+    text-align: center;     
+    justify-content: space-evenly;               
+    list-style: none;                  
+     }
+.navbar ul li {                                
+     font-family: 'Roboto', sans-serif;; 
+     display: inline-block;            
+     position: relative;                
+     padding: 20px 25px;           
+     background: #9D6381;              
+     cursor: pointer;                  
+     }
+.navbar ul li:hover {                       
+     background: rgba(157,99,129,0.8);            
+     color: #F7FFF7;                        
+     }
+.navbar ul li ul {                            
+    padding: 0;                       
+    position: absolute;             
+    top: 48px;                        
+    left: -10000px;                 
+    width: 150px;                  
+    }
+.navbar ul li ul li {                        
+    background: rgba(157,99,129,0.8);              
+    display: block;                 
+    color:#F7FFF7;                     
+    }
+.navbar ul li ul li:hover { 
+    background: rgba(148, 32, 92, 0.8);  
+}
+.navbar ul li:hover ul {                
+    display: block;                
+    left :0px;                        
+    }
+
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+body {
+	margin: 0;
+	background-color: #989C94;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family:'Roboto', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+figure {
+	margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
+
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+/* This is the line above the tiles */
+
+.masthead {
+	text-align: center;
+	border-bottom: 2px solid black;
+	padding: 20px
+}
+
+/* This is the part at the bottom that credits Morten and I */
+.colophon {
+	padding: 2em;
+	background: rgba(157,99,129,1);
+	color: black;
+	text-align: center;
+}
+
+.colophon a {
+	color: black;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid black;
+}
+
+
+
+/*--------------------------------------------------------------
+Card grid:
+--------------------------------------------------------------*/
+.cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1em;
+}
+
+.double {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+@media screen and (min-width: 80em) {
+	.cards {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+/*--------------------------------------------------------------
+CSS for the tiles "cards" with a hover and click option
+--------------------------------------------------------------*/
+
+.cards {
+	margin: 1em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.card {
+	display: grid;
+}
+
+.card img {
+	display: block;
+}
+
+.card img,
+.caption {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.cards a {
+	text-decoration: none;
+	display: block;
+}
+
+.caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 2em;
+	background: rgba(152,156,148,0.6);
+	color: #FCEC52;
+	font-size: 1.2em;
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+a:focus .caption,
+a:hover .caption {
+	opacity: 1;
+}
+
+.caption-title {
+	margin: 0;
+	font-size: 2em;
+}
+
+.caption p {
+	padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid: -Morten Rand-Hendriksen.
+--------------------------------------------------------------*/
+@supports (grid-area: auto) {
+
+	@media screen and (min-width: 600px) {
+
+
+	}
+}
